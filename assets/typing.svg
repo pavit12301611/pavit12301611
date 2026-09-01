@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="70" viewBox="0 0 820 70" role="img" aria-label="Built by hand, measured by numbers.">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38D9F0"/>
+      <stop offset="50%" stop-color="#00df8f"/>
+      <stop offset="100%" stop-color="#8C65F7"/>
+    </linearGradient>
+    <clipPath id="reveal">
+      <rect x="0" y="0" width="0" height="70">
+        <animate attributeName="width" values="0;760;760;0;0" keyTimes="0;0.32;0.62;0.86;1" dur="9s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+  <rect width="820" height="70" fill="#0d1116"/>
+  <g clip-path="url(#reveal)">
+    <text x="10" y="46" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="700" fill="url(#g)">
+      Built by hand, measured by numbers.
+    </text>
+  </g>
+  <rect x="10" y="16" width="3" height="38" fill="#00df8f">
+    <animate attributeName="x" values="12;660;660;12;12" keyTimes="0;0.32;0.62;0.86;1" dur="9s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;1;1;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+</svg>
