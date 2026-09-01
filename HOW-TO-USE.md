@@ -13,6 +13,9 @@ Iska `README.md` seedha tere GitHub profile page par dikhta hai:
 | `README.md` | Profile README — banner, badges, about, stack, projects, journey, stats, contact. Yahi profile par render hota hai. |
 | `assets/banner.png` | 1500×500 profile banner (dark #0d1116 + green #00df8f circuit theme, PS logo card). README ke top par use hua hai. |
 | `assets/avatar.png` | 512×512 PS monogram avatar (gradient cyan→violet→amber). GitHub profile photo ke liye upload kar. |
+| `assets/typing.svg` | Animated gradient tagline ("Built by hand, measured by numbers") — self-hosted, koi external service nahi. |
+| `assets/divider.svg` | Gradient section divider line — README ke har section ke beech. |
+| `setup/snake-workflow.yml` | Ready-made GitHub Action — contribution-snake animation banata hai. Isko `.github/workflows/snake.yml` par copy karna hai (steps neeche). |
 | `MASTER_PROMPT.md` | Tera master context prompt — kisi bhi AI agent ko dena hai to yahi paste kar. |
 | `HOW-TO-USE.md` | Yehi file — steps aur maintenance guide. |
 
@@ -51,6 +54,19 @@ Iska `README.md` seedha tere GitHub profile page par dikhta hai:
 - **Content badalna hai?** Sirf `README.md` edit karo → commit → push. Profile turant update ho jata hai.
 - **Naya project add karna hai?** `## 🚀 Featured projects` table mein ek row add kar do (live link + code link dono).
 - **Banner dobara banwana hai?** AI agent ko bolo: `@MASTER_PROMPT.md — TASK 1 execute karo, banner regenerate kar` — brand tokens (#0d1116 bg, #00df8f accent, Space Grotesk vibe) same rakhna.
+
+---
+
+## 🐍 Snake animation on karna (ek baar ka kaam)
+
+README ke bottom wala contribution-snake tabhi dikhega jab workflow ek baar chal jaye:
+
+1. `setup/snake-workflow.yml` ka content copy karke repo mein naya file bana: **`.github/workflows/snake.yml`**
+   (GitHub web par: *Add file → Create new file* → path mein `.github/workflows/snake.yml` type kar → paste → commit).
+   *(Ye step manually isliye hai kyunki agent ke paas workflow-write permission nahi hai.)*
+2. Repo → **Settings** → **Actions** → **General** → *Workflow permissions* → **Read and write permissions** → Save.
+3. Repo → **Actions** tab → **"Generate contribution snake"** → **Run workflow** → Run.
+4. 1–2 minute baad `output` branch ban jayega aur README mein snake live ho jayega. Uske baad har 12 ghante auto-update hoga.
 
 ---
 
