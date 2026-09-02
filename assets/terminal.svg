@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="300" viewBox="0 0 520 300" role="img" aria-label="Terminal session introducing Pavit Singh">
+  <defs>
+    <filter id="tg" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .m { font-family: 'JetBrains Mono','Consolas',monospace; font-size: 13px; }
+      .p { fill: #00df8f; } .c { fill: #4b5b6b; } .o { fill: #cbd5e1; }
+      .k { fill: #38D9F0; } .s { fill: #f4c95d; } .v { fill: #8C65F7; }
+    </style>
+  </defs>
+
+  <rect width="520" height="300" rx="12" fill="#0b0f14"/>
+  <rect x="0.5" y="0.5" width="519" height="299" rx="12" fill="none" stroke="#1f2b36"/>
+  <rect x="1" y="1" width="518" height="34" rx="11" fill="#131c25"/>
+  <circle cx="24" cy="18" r="5.5" fill="#eb705f"/>
+  <circle cx="44" cy="18" r="5.5" fill="#f4c95d"/>
+  <circle cx="64" cy="18" r="5.5" fill="#00df8f"/>
+  <text x="260" y="23" class="m c" text-anchor="middle">pavit@psdfolio — zsh</text>
+
+  <g class="m">
+    <g opacity="0"><animate attributeName="opacity" values="0;1;1" keyTimes="0;0.05;1" dur="12s" repeatCount="indefinite"/>
+      <text x="18" y="62"><tspan class="p">➜</tspan> <tspan class="k">whoami</tspan></text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.12;0.16;1" dur="12s" repeatCount="indefinite"/>
+      <text x="18" y="84" class="o">pavit singh · frontend &amp; motion</text></g>
+
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.22;0.26;1" dur="12s" repeatCount="indefinite"/>
+      <text x="18" y="116"><tspan class="p">➜</tspan> <tspan class="k">cat</tspan> <tspan class="s">stack.json</tspan></text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.32;0.36;1" dur="12s" repeatCount="indefinite"/>
+      <text x="18" y="138" class="o">{ <tspan class="v">"ui"</tspan>: "react, tailwind, motion",</text>
+      <text x="18" y="156" class="o">&#160;&#160;<tspan class="v">"lang"</tspan>: "ts, js, python",</text>
+      <text x="18" y="174" class="o">&#160;&#160;<tspan class="v">"care"</tspan>: "a11y, perf, honesty" }</text></g>
+
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.46;0.5;1" dur="12s" repeatCount="indefinite"/>
+      <text x="18" y="206"><tspan class="p">➜</tspan> <tspan class="k">lighthouse</tspan> <tspan class="s">--mobile</tspan></text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.58;0.62;1" dur="12s" repeatCount="indefinite"/>
+      <text x="18" y="228" class="o">perf <tspan class="p">98</tspan> · a11y <tspan class="p">100</tspan> · best <tspan class="p">100</tspan> · seo <tspan class="p">100</tspan></text></g>
+
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.72;0.76;1" dur="12s" repeatCount="indefinite"/>
+      <text x="18" y="260"><tspan class="p">➜</tspan> <tspan class="k">status</tspan></text></g>
+    <g opacity="0"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.82;0.86;1" dur="12s" repeatCount="indefinite"/>
+      <text x="18" y="282" class="o">open for <tspan class="s">1–2</tspan> projects / month <tspan class="p">●</tspan></text></g>
+  </g>
+
+  <rect width="8" height="14" fill="#00df8f" filter="url(#tg)">
+    <animate attributeName="x" values="70;70;180;180;170;170;175;175;110;110;250;250;95;95;265;265"
+      keyTimes="0;0.05;0.12;0.22;0.26;0.32;0.36;0.46;0.5;0.58;0.62;0.72;0.76;0.82;0.86;1" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="y" values="51;51;73;73;105;105;163;163;195;195;217;217;249;249;271;271"
+      keyTimes="0;0.05;0.12;0.22;0.26;0.32;0.36;0.46;0.5;0.58;0.62;0.72;0.76;0.82;0.86;1" dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150" role="img" aria-label="Thanks for scrolling — let's build something honest">
+  <defs>
+    <linearGradient id="w1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38D9F0"/><stop offset="50%" stop-color="#00df8f"/><stop offset="100%" stop-color="#8C65F7"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00df8f" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#00df8f" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="fg" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="150" rx="14" fill="#0d1116"/>
+
+  <!-- animated waves -->
+  <g>
+    <path fill="url(#fade)" d="M0,90 C150,60 300,120 500,90 C700,60 850,120 1000,90 L1000,150 L0,150 Z">
+      <animate attributeName="d" dur="9s" repeatCount="indefinite"
+        values="M0,90 C150,60 300,120 500,90 C700,60 850,120 1000,90 L1000,150 L0,150 Z;
+                M0,90 C150,120 300,60 500,90 C700,120 850,60 1000,90 L1000,150 L0,150 Z;
+                M0,90 C150,60 300,120 500,90 C700,60 850,120 1000,90 L1000,150 L0,150 Z"/>
+    </path>
+    <path fill="none" stroke="url(#w1)" stroke-width="2" opacity=".8" filter="url(#fg)"
+      d="M0,90 C150,60 300,120 500,90 C700,60 850,120 1000,90">
+      <animate attributeName="d" dur="9s" repeatCount="indefinite"
+        values="M0,90 C150,60 300,120 500,90 C700,60 850,120 1000,90;
+                M0,90 C150,120 300,60 500,90 C700,120 850,60 1000,90;
+                M0,90 C150,60 300,120 500,90 C700,60 850,120 1000,90"/>
+    </path>
+  </g>
+
+  <g text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif">
+    <text x="500" y="44" font-size="24" font-weight="700" fill="url(#w1)">Thanks for scrolling.</text>
+    <text x="500" y="70" font-size="14" fill="#9ca3af">Got something worth building? The inbox is open.</text>
+  </g>
+
+  <rect x="1" y="1" width="998" height="148" rx="14" fill="none" stroke="#1f2b36"/>
+</svg>
