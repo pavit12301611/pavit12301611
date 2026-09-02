@@ -1,24 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="70" viewBox="0 0 820 70" role="img" aria-label="Built by hand, measured by numbers.">
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="80" viewBox="0 0 820 80" role="img" aria-label="Built by hand, measured by numbers. Accessible by default. Fast on a mid-range phone.">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#38D9F0"/>
       <stop offset="50%" stop-color="#00df8f"/>
       <stop offset="100%" stop-color="#8C65F7"/>
     </linearGradient>
-    <clipPath id="reveal">
-      <rect x="0" y="0" width="0" height="70">
-        <animate attributeName="width" values="0;760;760;0;0" keyTimes="0;0.32;0.62;0.86;1" dur="9s" repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
+
+    <clipPath id="c1"><rect x="0" y="0" width="0" height="80">
+      <animate attributeName="width" values="0;0;700;700;0;0;0;0;0;0" keyTimes="0;0;0.09;0.28;0.32;0.33;1;1;1;1" dur="21s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="c2"><rect x="0" y="0" width="0" height="80">
+      <animate attributeName="width" values="0;0;0;620;620;0;0;0" keyTimes="0;0.33;0.34;0.43;0.62;0.66;0.67;1" dur="21s" repeatCount="indefinite"/>
+    </rect></clipPath>
+    <clipPath id="c3"><rect x="0" y="0" width="0" height="80">
+      <animate attributeName="width" values="0;0;0;660;660;0;0" keyTimes="0;0.66;0.67;0.76;0.95;0.99;1" dur="21s" repeatCount="indefinite"/>
+    </rect></clipPath>
+
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect width="820" height="70" fill="#0d1116"/>
-  <g clip-path="url(#reveal)">
-    <text x="10" y="46" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="34" font-weight="700" fill="url(#g)">
-      Built by hand, measured by numbers.
-    </text>
-  </g>
-  <rect x="10" y="16" width="3" height="38" fill="#00df8f">
-    <animate attributeName="x" values="12;660;660;12;12" keyTimes="0;0.32;0.62;0.86;1" dur="9s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;1;0;1;1;0;1" dur="1.2s" repeatCount="indefinite"/>
+
+  <rect width="820" height="80" rx="10" fill="#0d1116"/>
+
+  <text x="14" y="50" font-family="'JetBrains Mono','Consolas',monospace" font-size="30" font-weight="700" fill="url(#g)" clip-path="url(#c1)" filter="url(#glow)">Built by hand, measured by numbers.</text>
+  <text x="14" y="50" font-family="'JetBrains Mono','Consolas',monospace" font-size="30" font-weight="700" fill="url(#g)" clip-path="url(#c2)" filter="url(#glow)">Accessible by default, not by patch.</text>
+  <text x="14" y="50" font-family="'JetBrains Mono','Consolas',monospace" font-size="30" font-weight="700" fill="url(#g)" clip-path="url(#c3)" filter="url(#glow)">Fast on a mid-range phone, or it ships again.</text>
+
+  <rect y="24" width="3" height="34" rx="1.5" fill="#00df8f">
+    <animate attributeName="x"
+      values="16;16;646;646;16;16;586;586;16;16;626;626;16"
+      keyTimes="0;0.02;0.28;0.32;0.34;0.36;0.62;0.66;0.68;0.70;0.95;0.99;1"
+      dur="21s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="1.05s" repeatCount="indefinite"/>
   </rect>
 </svg>

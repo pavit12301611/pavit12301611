@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-label="Pavit Singh — Frontend Developer, UX/UI Designer, Automation Builder">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070a0e"/>
+      <stop offset="50%" stop-color="#0d1116"/>
+      <stop offset="100%" stop-color="#0a1418"/>
+    </linearGradient>
+
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38D9F0" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#00df8f" stop-opacity=".55"/>
+      <stop offset="55%" stop-color="#8C65F7" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#8C65F7" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="12s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38D9F0"><animate attributeName="stop-color" values="#38D9F0;#00df8f;#8C65F7;#38D9F0" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="50%" stop-color="#00df8f"><animate attributeName="stop-color" values="#00df8f;#8C65F7;#38D9F0;#00df8f" dur="8s" repeatCount="indefinite"/></stop>
+      <stop offset="100%" stop-color="#8C65F7"><animate attributeName="stop-color" values="#8C65F7;#38D9F0;#00df8f;#8C65F7" dur="8s" repeatCount="indefinite"/></stop>
+    </linearGradient>
+
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00df8f" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00df8f"/>
+      <stop offset="100%" stop-color="#8C65F7" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1b2733" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <rect width="1000" height="260" rx="16" fill="url(#sky)"/>
+  <rect width="1000" height="260" rx="16" fill="url(#grid)" opacity=".55"/>
+  <rect width="1000" height="260" rx="16" fill="url(#sweep)"/>
+
+  <!-- drifting particles -->
+  <g fill="#00df8f" opacity=".8">
+    <circle cx="90" cy="60" r="1.8"><animate attributeName="cy" values="60;40;60" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;1;.2" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="220" cy="200" r="1.4"><animate attributeName="cy" values="200;180;200" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.15;1" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="820" cy="70" r="2"><animate attributeName="cy" values="70;95;70" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".3;1;.3" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="930" cy="190" r="1.5"><animate attributeName="cy" values="190;165;190" dur="6.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.2;1" dur="6.5s" repeatCount="indefinite"/></circle>
+    <circle cx="140" cy="150" r="1.2"><animate attributeName="opacity" values=".1;.9;.1" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="215" r="1.2"><animate attributeName="opacity" values=".9;.1;.9" dur="5s" repeatCount="indefinite"/></circle>
+  </g>
+  <g fill="#8C65F7" opacity=".7">
+    <circle cx="380" cy="45" r="1.6"><animate attributeName="cy" values="45;28;45" dur="10s" repeatCount="indefinite"/></circle>
+    <circle cx="610" cy="225" r="1.6"><animate attributeName="cy" values="225;208;225" dur="11s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- title -->
+  <g text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+    <text x="500" y="96" font-size="17" letter-spacing="9" fill="#38D9F0" opacity=".85">
+      P S D F O L I O
+      <animate attributeName="opacity" values=".35;.95;.35" dur="5s" repeatCount="indefinite"/>
+    </text>
+    <text x="500" y="158" font-size="60" font-weight="800" letter-spacing="2" fill="url(#title)" filter="url(#soft)">PAVIT SINGH</text>
+    <text x="500" y="196" font-size="16" letter-spacing="4" fill="#9ca3af">
+      FRONTEND  DEVELOPER  ·  UX / UI  DESIGNER  ·  AUTOMATION  BUILDER
+    </text>
+  </g>
+
+  <rect x="300" y="212" width="400" height="2" rx="1" fill="url(#rule)">
+    <animate attributeName="width" values="0;400;400" keyTimes="0;0.4;1" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="500;300;300" keyTimes="0;0.4;1" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="1" y="1" width="998" height="258" rx="16" fill="none" stroke="#1f2b36" stroke-width="2"/>
+</svg>

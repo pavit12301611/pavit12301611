@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="8" viewBox="0 0 1000 8" role="presentation">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="16" viewBox="0 0 1000 16" role="presentation">
   <defs>
     <linearGradient id="d" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#0d1116" stop-opacity="0"/>
@@ -7,6 +7,29 @@
       <stop offset="80%" stop-color="#8C65F7"/>
       <stop offset="100%" stop-color="#0d1116" stop-opacity="0"/>
     </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity=".95"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="gl" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
   </defs>
-  <rect x="0" y="3" width="1000" height="2" rx="1" fill="url(#d)"/>
+
+  <rect x="0" y="7" width="1000" height="2" rx="1" fill="url(#d)"/>
+
+  <!-- travelling light pulse -->
+  <rect y="6" width="160" height="4" rx="2" fill="url(#spark)" filter="url(#gl)" opacity=".9">
+    <animate attributeName="x" values="-160;1000" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- centre diamond -->
+  <g transform="translate(500 8)">
+    <rect x="-4" y="-4" width="8" height="8" transform="rotate(45)" fill="#00df8f" filter="url(#gl)">
+      <animateTransform attributeName="transform" type="rotate" values="45;405" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".5;1;.5" dur="3s" repeatCount="indefinite"/>
+    </rect>
+  </g>
 </svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="230" viewBox="0 0 1000 230" role="img" aria-label="Focus areas: Frontend engineering, UI and motion design, Accessibility, Performance, Automation">
+  <defs>
+    <linearGradient id="b1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38D9F0"/><stop offset="100%" stop-color="#00df8f"/></linearGradient>
+    <linearGradient id="b2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00df8f"/><stop offset="100%" stop-color="#8C65F7"/></linearGradient>
+    <linearGradient id="b3" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8C65F7"/><stop offset="100%" stop-color="#eb705f"/></linearGradient>
+    <linearGradient id="b4" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#f4c95d"/><stop offset="100%" stop-color="#00df8f"/></linearGradient>
+    <linearGradient id="b5" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38D9F0"/><stop offset="100%" stop-color="#8C65F7"/></linearGradient>
+    <filter id="bg" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="230" rx="14" fill="#0d1116"/>
+  <rect x="1" y="1" width="998" height="228" rx="14" fill="none" stroke="#1f2b36"/>
+
+  <text x="26" y="34" font-family="'Segoe UI',Arial,sans-serif" font-size="13" letter-spacing="4" fill="#4b5b6b">WHERE THE HOURS GO</text>
+
+  <g font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#9ca3af">
+    <!-- rows -->
+    <g transform="translate(0 62)">
+      <text x="26" y="5">Frontend engineering — React · TypeScript · Tailwind</text>
+      <rect x="600" y="-8" width="340" height="10" rx="5" fill="#131c25"/>
+      <rect x="600" y="-8" width="0" height="10" rx="5" fill="url(#b1)" filter="url(#bg)">
+        <animate attributeName="width" values="0;320;320" keyTimes="0;0.35;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="952" y="5" fill="#00df8f" font-size="12">94</text>
+    </g>
+    <g transform="translate(0 98)">
+      <text x="26" y="5">UI &amp; motion design — Figma · Framer Motion · Canvas</text>
+      <rect x="600" y="-8" width="340" height="10" rx="5" fill="#131c25"/>
+      <rect x="600" y="-8" width="0" height="10" rx="5" fill="url(#b2)" filter="url(#bg)">
+        <animate attributeName="width" values="0;299;299" keyTimes="0;0.4;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="952" y="5" fill="#00df8f" font-size="12">88</text>
+    </g>
+    <g transform="translate(0 134)">
+      <text x="26" y="5">Accessibility — WCAG 2.2 · semantics · reduced motion</text>
+      <rect x="600" y="-8" width="340" height="10" rx="5" fill="#131c25"/>
+      <rect x="600" y="-8" width="0" height="10" rx="5" fill="url(#b3)" filter="url(#bg)">
+        <animate attributeName="width" values="0;309;309" keyTimes="0;0.45;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="952" y="5" fill="#00df8f" font-size="12">91</text>
+    </g>
+    <g transform="translate(0 170)">
+      <text x="26" y="5">Performance — budgets · Lighthouse · real devices</text>
+      <rect x="600" y="-8" width="340" height="10" rx="5" fill="#131c25"/>
+      <rect x="600" y="-8" width="0" height="10" rx="5" fill="url(#b4)" filter="url(#bg)">
+        <animate attributeName="width" values="0;296;296" keyTimes="0;0.5;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="952" y="5" fill="#00df8f" font-size="12">87</text>
+    </g>
+    <g transform="translate(0 206)">
+      <text x="26" y="5">Automation — Python scripting · workflow tooling</text>
+      <rect x="600" y="-8" width="340" height="10" rx="5" fill="#131c25"/>
+      <rect x="600" y="-8" width="0" height="10" rx="5" fill="url(#b5)" filter="url(#bg)">
+        <animate attributeName="width" values="0;272;272" keyTimes="0;0.55;1" dur="7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="952" y="5" fill="#00df8f" font-size="12">80</text>
+    </g>
+  </g>
+</svg>
