@@ -1,38 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="820" height="80" viewBox="0 0 820 80" role="img" aria-label="Built by hand, measured by numbers. Accessible by default. Fast on a mid-range phone.">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="92" viewBox="0 0 900 92" role="img" aria-label="Built by hand, measured by numbers. Accessible by default. Fast on a mid-range phone.">
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="tg" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#38D9F0"/>
-      <stop offset="50%" stop-color="#00df8f"/>
-      <stop offset="100%" stop-color="#8C65F7"/>
+      <stop offset="35%" stop-color="#00df8f"/>
+      <stop offset="70%" stop-color="#8C65F7"/>
+      <stop offset="100%" stop-color="#f4c95d"/>
     </linearGradient>
-
-    <clipPath id="c1"><rect x="0" y="0" width="0" height="80">
-      <animate attributeName="width" values="0;0;700;700;0;0;0;0;0;0" keyTimes="0;0;0.09;0.28;0.32;0.33;1;1;1;1" dur="21s" repeatCount="indefinite"/>
-    </rect></clipPath>
-    <clipPath id="c2"><rect x="0" y="0" width="0" height="80">
-      <animate attributeName="width" values="0;0;0;620;620;0;0;0" keyTimes="0;0.33;0.34;0.43;0.62;0.66;0.67;1" dur="21s" repeatCount="indefinite"/>
-    </rect></clipPath>
-    <clipPath id="c3"><rect x="0" y="0" width="0" height="80">
-      <animate attributeName="width" values="0;0;0;660;660;0;0" keyTimes="0;0.66;0.67;0.76;0.95;0.99;1" dur="21s" repeatCount="indefinite"/>
-    </rect></clipPath>
-
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3.5" result="b"/>
+    <filter id="tgGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
+    <!-- clip animations for 4 phrases -->
+    <clipPath id="c1"><rect x="0" y="0" width="0" height="92"><animate attributeName="width" values="0;0;760;760;0;0;0;0;0;0" keyTimes="0;0.02;0.11;0.24;0.27;0.28;1;1;1;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="c2"><rect x="0" y="0" width="0" height="92"><animate attributeName="width" values="0;0;0;680;680;0;0;0" keyTimes="0;0.28;0.29;0.38;0.51;0.54;0.55;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="c3"><rect x="0" y="0" width="0" height="92"><animate attributeName="width" values="0;0;0;760;760;0;0" keyTimes="0;0.54;0.55;0.64;0.77;0.80;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="c4"><rect x="0" y="0" width="0" height="92"><animate attributeName="width" values="0;0;0;380;380;0;0" keyTimes="0;0.80;0.81;0.87;0.95;0.98;1" dur="20s" repeatCount="indefinite"/></rect></clipPath>
   </defs>
 
-  <rect width="820" height="80" rx="10" fill="#0d1116"/>
+  <rect width="900" height="92" rx="16" fill="#0d1116"/>
+  <rect x="0.8" y="0.8" width="898.4" height="90.4" rx="16" fill="none" stroke="#1f2b36" stroke-width="1"/>
+  <!-- subtle grid -->
+  <g opacity="0.25">
+    <path d="M0 12 H900 M0 24 H900 M0 36 H900 M0 48 H900 M0 60 H900 M0 72 H900" stroke="#1a2330" stroke-width="0.5" stroke-dasharray="3 8"/>
+  </g>
 
-  <text x="14" y="50" font-family="'JetBrains Mono','Consolas',monospace" font-size="30" font-weight="700" fill="url(#g)" clip-path="url(#c1)" filter="url(#glow)">Built by hand, measured by numbers.</text>
-  <text x="14" y="50" font-family="'JetBrains Mono','Consolas',monospace" font-size="30" font-weight="700" fill="url(#g)" clip-path="url(#c2)" filter="url(#glow)">Accessible by default, not by patch.</text>
-  <text x="14" y="50" font-family="'JetBrains Mono','Consolas',monospace" font-size="30" font-weight="700" fill="url(#g)" clip-path="url(#c3)" filter="url(#glow)">Fast on a mid-range phone, or it ships again.</text>
+  <!-- left prompt -->
+  <text x="22" y="56" font-family="'JetBrains Mono',Consolas,monospace" font-size="16" fill="#00df8f" font-weight="700">❯</text>
 
-  <rect y="24" width="3" height="34" rx="1.5" fill="#00df8f">
-    <animate attributeName="x"
-      values="16;16;646;646;16;16;586;586;16;16;626;626;16"
-      keyTimes="0;0.02;0.28;0.32;0.34;0.36;0.62;0.66;0.68;0.70;0.95;0.99;1"
-      dur="21s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="1;1;0;0;1" dur="1.05s" repeatCount="indefinite"/>
+  <!-- animated phrases -->
+  <g font-family="'JetBrains Mono','SF Mono',Consolas,monospace" font-size="28" font-weight="700" filter="url(#tgGlow)">
+    <text x="48" y="58" fill="url(#tg)" clip-path="url(#c1)">Built by hand, measured by numbers.</text>
+    <text x="48" y="58" fill="url(#tg)" clip-path="url(#c2)">Accessible by default, not by patch.</text>
+    <text x="48" y="58" fill="url(#tg)" clip-path="url(#c3)">Fast on a mid-range phone, or it ships again.</text>
+    <text x="48" y="58" fill="url(#tg)" clip-path="url(#c4)">Craft over noise. Always.</text>
+  </g>
+
+  <!-- cursor -->
+  <rect y="28" width="4" height="36" rx="2" fill="#00df8f" filter="url(#tgGlow)">
+    <animate attributeName="x" values="52;52;732;732;52;52;652;652;52;52;732;732;52;52;400;400;52" keyTimes="0;0.02;0.24;0.27;0.28;0.29;0.51;0.54;0.55;0.56;0.77;0.80;0.81;0.82;0.95;0.98;1" dur="20s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;1;0;0;1" dur="0.9s" repeatCount="indefinite"/>
   </rect>
+
+  <!-- right decoration: small code hint -->
+  <g transform="translate(760 18)" opacity="0.5">
+    <rect width="118" height="22" rx="11" fill="#14181f" stroke="#1f2b36"/>
+    <text x="59" y="15" text-anchor="middle" font-family="'JetBrains Mono',monospace" font-size="10" fill="#6b7280">PSDFOLIO • OS</text>
+  </g>
 </svg>

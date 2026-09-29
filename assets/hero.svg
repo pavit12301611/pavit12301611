@@ -1,75 +1,158 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260" role="img" aria-label="Pavit Singh — Frontend Developer, UX/UI Designer, Automation Builder">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Pavit Singh — Frontend Developer · UX/UI Designer · Automation Builder — PSDFOLIO">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+    <!-- Backgrounds -->
+    <radialGradient id="bgGlow" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="#00df8f" stop-opacity="0.12"/>
+      <stop offset="40%" stop-color="#8C65F7" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#0d1116" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bgBase" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#070a0e"/>
-      <stop offset="50%" stop-color="#0d1116"/>
-      <stop offset="100%" stop-color="#0a1418"/>
+      <stop offset="45%" stop-color="#0d1116"/>
+      <stop offset="100%" stop-color="#0f1720"/>
     </linearGradient>
-
-    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#38D9F0" stop-opacity="0"/>
-      <stop offset="45%" stop-color="#00df8f" stop-opacity=".55"/>
-      <stop offset="55%" stop-color="#8C65F7" stop-opacity=".55"/>
-      <stop offset="100%" stop-color="#8C65F7" stop-opacity="0"/>
-      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;-1 0" dur="12s" repeatCount="indefinite"/>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38D9F0">
+        <animate attributeName="stop-color" values="#38D9F0;#00df8f;#8C65F7;#38D9F0" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#00df8f">
+        <animate attributeName="stop-color" values="#00df8f;#8C65F7;#38D9F0;#00df8f" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#8C65F7">
+        <animate attributeName="stop-color" values="#8C65F7;#38D9F0;#00df8f;#8C65F7" dur="8s" repeatCount="indefinite"/>
+      </stop>
     </linearGradient>
-
-    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#38D9F0"><animate attributeName="stop-color" values="#38D9F0;#00df8f;#8C65F7;#38D9F0" dur="8s" repeatCount="indefinite"/></stop>
-      <stop offset="50%" stop-color="#00df8f"><animate attributeName="stop-color" values="#00df8f;#8C65F7;#38D9F0;#00df8f" dur="8s" repeatCount="indefinite"/></stop>
-      <stop offset="100%" stop-color="#8C65F7"><animate attributeName="stop-color" values="#8C65F7;#38D9F0;#00df8f;#8C65F7" dur="8s" repeatCount="indefinite"/></stop>
-    </linearGradient>
-
-    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="ruleGrad" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#00df8f" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#38D9F0"/>
       <stop offset="50%" stop-color="#00df8f"/>
-      <stop offset="100%" stop-color="#8C65F7" stop-opacity="0"/>
+      <stop offset="75%" stop-color="#8C65F7"/>
+      <stop offset="100%" stop-color="#00df8f" stop-opacity="0"/>
     </linearGradient>
-
-    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="6" result="b"/>
+    <linearGradient id="cardBorder" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38D9F0" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#00df8f" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8C65F7" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="psGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38D9F0"/>
+      <stop offset="50%" stop-color="#00df8f"/>
+      <stop offset="100%" stop-color="#8C65F7"/>
+    </linearGradient>
+    <filter id="softGlow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="8" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#1b2733" stroke-width="1"/>
+    <filter id="tinyGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" fill="none" stroke="#1b2733" stroke-width="0.8" opacity="0.7"/>
     </pattern>
+    <pattern id="dotGrid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#1f2f3f" opacity="0.6"/>
+    </pattern>
+    <!-- circuit lines -->
+    <path id="circuit" d="M0 0 H40 V20 H80 V0 H120" fill="none" stroke="#1e2d3a" stroke-width="1" opacity="0.5"/>
   </defs>
 
-  <rect width="1000" height="260" rx="16" fill="url(#sky)"/>
-  <rect width="1000" height="260" rx="16" fill="url(#grid)" opacity=".55"/>
-  <rect width="1000" height="260" rx="16" fill="url(#sweep)"/>
+  <!-- Base -->
+  <rect width="1200" height="340" rx="20" fill="url(#bgBase)"/>
+  <rect width="1200" height="340" rx="20" fill="url(#grid)"/>
+  <rect width="1200" height="340" rx="20" fill="url(#dotGrid)" opacity="0.3"/>
+  <rect width="1200" height="340" rx="20" fill="url(#bgGlow)"/>
 
-  <!-- drifting particles -->
-  <g fill="#00df8f" opacity=".8">
-    <circle cx="90" cy="60" r="1.8"><animate attributeName="cy" values="60;40;60" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values=".2;1;.2" dur="7s" repeatCount="indefinite"/></circle>
-    <circle cx="220" cy="200" r="1.4"><animate attributeName="cy" values="200;180;200" dur="9s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.15;1" dur="9s" repeatCount="indefinite"/></circle>
-    <circle cx="820" cy="70" r="2"><animate attributeName="cy" values="70;95;70" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".3;1;.3" dur="8s" repeatCount="indefinite"/></circle>
-    <circle cx="930" cy="190" r="1.5"><animate attributeName="cy" values="190;165;190" dur="6.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.2;1" dur="6.5s" repeatCount="indefinite"/></circle>
-    <circle cx="140" cy="150" r="1.2"><animate attributeName="opacity" values=".1;.9;.1" dur="4s" repeatCount="indefinite"/></circle>
-    <circle cx="700" cy="215" r="1.2"><animate attributeName="opacity" values=".9;.1;.9" dur="5s" repeatCount="indefinite"/></circle>
-  </g>
-  <g fill="#8C65F7" opacity=".7">
-    <circle cx="380" cy="45" r="1.6"><animate attributeName="cy" values="45;28;45" dur="10s" repeatCount="indefinite"/></circle>
-    <circle cx="610" cy="225" r="1.6"><animate attributeName="cy" values="225;208;225" dur="11s" repeatCount="indefinite"/></circle>
+  <!-- subtle circuit accents -->
+  <g opacity="0.35">
+    <path d="M40 40 H160 V80 H220" fill="none" stroke="#1e2d3a" stroke-width="1" stroke-dasharray="4 6">
+      <animate attributeName="stroke-dashoffset" values="0;20" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M1040 300 H900 V260 H840" fill="none" stroke="#1e2d3a" stroke-width="1" stroke-dasharray="4 6">
+      <animate attributeName="stroke-dashoffset" values="20;0" dur="3.5s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="160" cy="40" r="2.5" fill="#00df8f" opacity="0.8"/>
+    <circle cx="220" cy="80" r="2" fill="#8C65F7" opacity="0.6"/>
+    <circle cx="900" cy="260" r="2" fill="#38D9F0" opacity="0.7"/>
   </g>
 
-  <!-- title -->
-  <g text-anchor="middle" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
-    <text x="500" y="96" font-size="17" letter-spacing="9" fill="#38D9F0" opacity=".85">
-      P S D F O L I O
-      <animate attributeName="opacity" values=".35;.95;.35" dur="5s" repeatCount="indefinite"/>
+  <!-- floating particles -->
+  <g>
+    <circle cx="120" cy="70" r="1.8" fill="#00df8f"><animate attributeName="cy" values="70;50;70" dur="6s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;1;0.2" dur="6s" repeatCount="indefinite"/></circle>
+    <circle cx="280" cy="260" r="1.4" fill="#00df8f"><animate attributeName="cy" values="260;240;260" dur="8s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0.15;1" dur="8s" repeatCount="indefinite"/></circle>
+    <circle cx="950" cy="90" r="2" fill="#8C65F7"><animate attributeName="cy" values="90;115;90" dur="7s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.3;1;0.3" dur="7s" repeatCount="indefinite"/></circle>
+    <circle cx="1080" cy="220" r="1.5" fill="#38D9F0"><animate attributeName="cy" values="220;195;220" dur="5.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0.2;1" dur="5.5s" repeatCount="indefinite"/></circle>
+    <circle cx="200" cy="180" r="1.2" fill="#f4c95d"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="860" cy="280" r="1.2" fill="#00df8f"><animate attributeName="opacity" values="0.9;0.1;0.9" dur="5s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="50" r="1.6" fill="#8C65F7"><animate attributeName="cy" values="50;33;50" dur="9s" repeatCount="indefinite"/></circle>
+    <circle cx="720" cy="300" r="1.6" fill="#38D9F0"><animate attributeName="cy" values="300;283;300" dur="10s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- PS Logo Card (right side) -->
+  <g transform="translate(960 56)">
+    <rect width="184" height="184" rx="22" fill="#101820" stroke="url(#cardBorder)" stroke-width="1.5"/>
+    <rect width="184" height="184" rx="22" fill="url(#bgGlow)" opacity="0.6"/>
+    <!-- inner glow -->
+    <rect x="1" y="1" width="182" height="182" rx="21" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    <!-- PS Monogram -->
+    <g transform="translate(92 92)" text-anchor="middle">
+      <text y="18" font-family="'Space Grotesk','Segoe UI',sans-serif" font-size="72" font-weight="900" fill="url(#psGrad)" filter="url(#softGlow)" letter-spacing="-2">PS</text>
+    </g>
+    <g transform="translate(92 152)" text-anchor="middle">
+      <text font-family="'JetBrains Mono',monospace" font-size="10" letter-spacing="3" fill="#4b5b6b">PSDFOLIO • 2026</text>
+    </g>
+    <!-- status dot -->
+    <g transform="translate(152 22)">
+      <circle r="5" fill="#00df8f" filter="url(#tinyGlow)">
+        <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="8" fill="#00df8f" opacity="0.15">
+        <animate attributeName="r" values="5;12;5" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.3;0;0.3" dur="2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- Left content -->
+  <g font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+    <!-- top label -->
+    <g transform="translate(56 72)">
+      <rect width="132" height="26" rx="13" fill="#00df8f" opacity="0.12"/>
+      <rect width="132" height="26" rx="13" fill="none" stroke="#00df8f" stroke-opacity="0.25"/>
+      <text x="18" y="17" font-family="'JetBrains Mono',monospace" font-size="11" letter-spacing="1.5" fill="#00df8f">● OPEN TO WORK</text>
+    </g>
+
+    <text x="56" y="108" font-family="'JetBrains Mono',monospace" font-size="14" letter-spacing="8" fill="#38D9F0" opacity="0.9">P S D F O L I O
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
     </text>
-    <text x="500" y="158" font-size="60" font-weight="800" letter-spacing="2" fill="url(#title)" filter="url(#soft)">PAVIT SINGH</text>
-    <text x="500" y="196" font-size="16" letter-spacing="4" fill="#9ca3af">
-      FRONTEND  DEVELOPER  ·  UX / UI  DESIGNER  ·  AUTOMATION  BUILDER
-    </text>
+
+    <text x="54" y="172" font-size="72" font-weight="900" letter-spacing="1.5" fill="url(#titleGrad)" filter="url(#softGlow)">PAVIT SINGH</text>
+
+    <text x="56" y="206" font-size="15.5" letter-spacing="3.5" fill="#9ca3af" font-weight="500">FRONTEND DEVELOPER  ·  UX/UI DESIGNER  ·  AUTOMATION BUILDER</text>
+
+    <g transform="translate(56 228)">
+      <text font-family="'JetBrains Mono',monospace" font-size="12.5" fill="#6b7280">Saharanpur, India — crafting fast, accessible, premium web experiences since 2022</text>
+    </g>
+
+    <!-- bottom rule with animated sweep -->
+    <g>
+      <rect x="56" y="258" width="520" height="2" rx="1" fill="url(#ruleGrad)"/>
+      <rect x="56" y="257" width="90" height="4" rx="2" fill="white" opacity="0.9" filter="url(#tinyGlow)">
+        <animate attributeName="x" values="56;486;56" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- tech pills -->
+    <g transform="translate(56 280)" font-family="'JetBrains Mono',monospace" font-size="11">
+      <g><rect width="74" height="22" rx="11" fill="#14181f" stroke="#1f2b36"/><text x="37" y="15" text-anchor="middle" fill="#00df8f">REACT</text></g>
+      <g transform="translate(84 0)"><rect width="98" height="22" rx="11" fill="#14181f" stroke="#1f2b36"/><text x="49" y="15" text-anchor="middle" fill="#38D9F0">TYPESCRIPT</text></g>
+      <g transform="translate(192 0)"><rect width="88" height="22" rx="11" fill="#14181f" stroke="#1f2b36"/><text x="44" y="15" text-anchor="middle" fill="#f4c95d">TAILWIND</text></g>
+      <g transform="translate(290 0)"><rect width="84" height="22" rx="11" fill="#14181f" stroke="#1f2b36"/><text x="42" y="15" text-anchor="middle" fill="#8C65F7">MOTION</text></g>
+      <g transform="translate(384 0)"><rect width="76" height="22" rx="11" fill="#14181f" stroke="#1f2b36"/><text x="38" y="15" text-anchor="middle" fill="#eb705f">A11Y</text></g>
+    </g>
   </g>
 
-  <rect x="300" y="212" width="400" height="2" rx="1" fill="url(#rule)">
-    <animate attributeName="width" values="0;400;400" keyTimes="0;0.4;1" dur="6s" repeatCount="indefinite"/>
-    <animate attributeName="x" values="500;300;300" keyTimes="0;0.4;1" dur="6s" repeatCount="indefinite"/>
-  </rect>
-
-  <rect x="1" y="1" width="998" height="258" rx="16" fill="none" stroke="#1f2b36" stroke-width="2"/>
+  <!-- border -->
+  <rect x="1" y="1" width="1198" height="338" rx="20" fill="none" stroke="#1f2b36" stroke-width="1.2"/>
+  <rect x="1" y="1" width="1198" height="338" rx="20" fill="none" stroke="url(#cardBorder)" stroke-opacity="0.18" stroke-width="1.2"/>
 </svg>
