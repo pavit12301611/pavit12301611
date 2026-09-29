@@ -1,62 +1,67 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="230" viewBox="0 0 1000 230" role="img" aria-label="Focus areas: Frontend engineering, UI and motion design, Accessibility, Performance, Automation">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="300" viewBox="0 0 1100 300" role="img" aria-label="Focus areas and skill distribution">
   <defs>
-    <linearGradient id="b1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38D9F0"/><stop offset="100%" stop-color="#00df8f"/></linearGradient>
-    <linearGradient id="b2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00df8f"/><stop offset="100%" stop-color="#8C65F7"/></linearGradient>
-    <linearGradient id="b3" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8C65F7"/><stop offset="100%" stop-color="#eb705f"/></linearGradient>
-    <linearGradient id="b4" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#f4c95d"/><stop offset="100%" stop-color="#00df8f"/></linearGradient>
-    <linearGradient id="b5" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38D9F0"/><stop offset="100%" stop-color="#8C65F7"/></linearGradient>
-    <filter id="bg" x="-20%" y="-60%" width="140%" height="220%">
-      <feGaussianBlur stdDeviation="3" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="s1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38D9F0"/><stop offset="100%" stop-color="#00df8f"/></linearGradient>
+    <linearGradient id="s2" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00df8f"/><stop offset="100%" stop-color="#8C65F7"/></linearGradient>
+    <linearGradient id="s3" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#8C65F7"/><stop offset="100%" stop-color="#eb705f"/></linearGradient>
+    <linearGradient id="s4" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#f4c95d"/><stop offset="100%" stop-color="#00df8f"/></linearGradient>
+    <linearGradient id="s5" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38D9F0"/><stop offset="100%" stop-color="#8C65F7"/></linearGradient>
+    <linearGradient id="s6" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#00df8f"/><stop offset="100%" stop-color="#38D9F0"/></linearGradient>
+    <filter id="sg" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
 
-  <rect width="1000" height="230" rx="14" fill="#0d1116"/>
-  <rect x="1" y="1" width="998" height="228" rx="14" fill="none" stroke="#1f2b36"/>
+  <rect width="1100" height="300" rx="18" fill="#0d1116"/>
+  <rect x="0.8" y="0.8" width="1098.4" height="298.4" rx="18" fill="none" stroke="#1f2b36"/>
 
-  <text x="26" y="34" font-family="'Segoe UI',Arial,sans-serif" font-size="13" letter-spacing="4" fill="#4b5b6b">WHERE THE HOURS GO</text>
+  <text x="28" y="36" font-family="'JetBrains Mono',monospace" font-size="12" letter-spacing="4" fill="#4b5b6b">WHERE THE HOURS GO — 2026 FOCUS</text>
 
-  <g font-family="'Segoe UI',Arial,sans-serif" font-size="14" fill="#9ca3af">
-    <!-- rows -->
+  <g font-family="'Segoe UI',Arial,sans-serif">
+    <!-- Row template -->
     <g transform="translate(0 62)">
-      <text x="26" y="5">Frontend engineering — React · TypeScript · Tailwind</text>
-      <rect x="600" y="-8" width="340" height="10" rx="5" fill="#131c25"/>
-      <rect x="600" y="-8" width="0" height="10" rx="5" fill="url(#b1)" filter="url(#bg)">
-        <animate attributeName="width" values="0;320;320" keyTimes="0;0.35;1" dur="7s" repeatCount="indefinite"/>
-      </rect>
-      <text x="952" y="5" fill="#00df8f" font-size="12">94</text>
+      <text x="28" y="4" font-size="14" fill="#cbd5e1" font-weight="600">⚛️ Frontend Engineering</text>
+      <text x="28" y="20" font-size="12" fill="#6b7280">React · TypeScript · Tailwind · Vite · Design Tokens</text>
+      <rect x="420" y="-2" width="520" height="12" rx="6" fill="#141c26"/>
+      <rect x="420" y="-2" width="0" height="12" rx="6" fill="url(#s1)" filter="url(#sg)"><animate attributeName="width" values="0;488;488" keyTimes="0;0.35;1" dur="6s" repeatCount="indefinite"/></rect>
+      <g transform="translate(960 0)"><rect width="42" height="20" rx="10" fill="#00df8f" opacity="0.12"/><text x="21" y="14" text-anchor="middle" font-size="12" font-weight="700" fill="#00df8f">94%</text></g>
     </g>
-    <g transform="translate(0 98)">
-      <text x="26" y="5">UI &amp; motion design — Figma · Framer Motion · Canvas</text>
-      <rect x="600" y="-8" width="340" height="10" rx="5" fill="#131c25"/>
-      <rect x="600" y="-8" width="0" height="10" rx="5" fill="url(#b2)" filter="url(#bg)">
-        <animate attributeName="width" values="0;299;299" keyTimes="0;0.4;1" dur="7s" repeatCount="indefinite"/>
-      </rect>
-      <text x="952" y="5" fill="#00df8f" font-size="12">88</text>
+
+    <g transform="translate(0 104)">
+      <text x="28" y="4" font-size="14" fill="#cbd5e1" font-weight="600">🎨 UI &amp; Motion Design</text>
+      <text x="28" y="20" font-size="12" fill="#6b7280">Figma · Framer Motion · Canvas &amp; rAF · Three.js</text>
+      <rect x="420" y="-2" width="520" height="12" rx="6" fill="#141c26"/>
+      <rect x="420" y="-2" width="0" height="12" rx="6" fill="url(#s2)" filter="url(#sg)"><animate attributeName="width" values="0;457;457" keyTimes="0;0.4;1" dur="6s" repeatCount="indefinite"/></rect>
+      <g transform="translate(960 0)"><rect width="42" height="20" rx="10" fill="#8C65F7" opacity="0.15"/><text x="21" y="14" text-anchor="middle" font-size="12" font-weight="700" fill="#8C65F7">88%</text></g>
     </g>
-    <g transform="translate(0 134)">
-      <text x="26" y="5">Accessibility — WCAG 2.2 · semantics · reduced motion</text>
-      <rect x="600" y="-8" width="340" height="10" rx="5" fill="#131c25"/>
-      <rect x="600" y="-8" width="0" height="10" rx="5" fill="url(#b3)" filter="url(#bg)">
-        <animate attributeName="width" values="0;309;309" keyTimes="0;0.45;1" dur="7s" repeatCount="indefinite"/>
-      </rect>
-      <text x="952" y="5" fill="#00df8f" font-size="12">91</text>
+
+    <g transform="translate(0 146)">
+      <text x="28" y="4" font-size="14" fill="#cbd5e1" font-weight="600">♿ Accessibility</text>
+      <text x="28" y="20" font-size="12" fill="#6b7280">WCAG 2.2 · Semantics · Focus · Reduced Motion</text>
+      <rect x="420" y="-2" width="520" height="12" rx="6" fill="#141c26"/>
+      <rect x="420" y="-2" width="0" height="12" rx="6" fill="url(#s3)" filter="url(#sg)"><animate attributeName="width" values="0;473;473" keyTimes="0;0.45;1" dur="6s" repeatCount="indefinite"/></rect>
+      <g transform="translate(960 0)"><rect width="42" height="20" rx="10" fill="#eb705f" opacity="0.15"/><text x="21" y="14" text-anchor="middle" font-size="12" font-weight="700" fill="#eb705f">91%</text></g>
     </g>
-    <g transform="translate(0 170)">
-      <text x="26" y="5">Performance — budgets · Lighthouse · real devices</text>
-      <rect x="600" y="-8" width="340" height="10" rx="5" fill="#131c25"/>
-      <rect x="600" y="-8" width="0" height="10" rx="5" fill="url(#b4)" filter="url(#bg)">
-        <animate attributeName="width" values="0;296;296" keyTimes="0;0.5;1" dur="7s" repeatCount="indefinite"/>
-      </rect>
-      <text x="952" y="5" fill="#00df8f" font-size="12">87</text>
+
+    <g transform="translate(0 188)">
+      <text x="28" y="4" font-size="14" fill="#cbd5e1" font-weight="600">⚡ Performance</text>
+      <text x="28" y="20" font-size="12" fill="#6b7280">Budgets · Lighthouse · Real Devices · WebP</text>
+      <rect x="420" y="-2" width="520" height="12" rx="6" fill="#141c26"/>
+      <rect x="420" y="-2" width="0" height="12" rx="6" fill="url(#s4)" filter="url(#sg)"><animate attributeName="width" values="0;452;452" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/></rect>
+      <g transform="translate(960 0)"><rect width="42" height="20" rx="10" fill="#f4c95d" opacity="0.15"/><text x="21" y="14" text-anchor="middle" font-size="12" font-weight="700" fill="#f4c95d">87%</text></g>
     </g>
-    <g transform="translate(0 206)">
-      <text x="26" y="5">Automation — Python scripting · workflow tooling</text>
-      <rect x="600" y="-8" width="340" height="10" rx="5" fill="#131c25"/>
-      <rect x="600" y="-8" width="0" height="10" rx="5" fill="url(#b5)" filter="url(#bg)">
-        <animate attributeName="width" values="0;272;272" keyTimes="0;0.55;1" dur="7s" repeatCount="indefinite"/>
-      </rect>
-      <text x="952" y="5" fill="#00df8f" font-size="12">80</text>
+
+    <g transform="translate(0 230)">
+      <text x="28" y="4" font-size="14" fill="#cbd5e1" font-weight="600">🤖 Automation</text>
+      <text x="28" y="20" font-size="12" fill="#6b7280">Python · Scripting · Workflow Tooling · APIs</text>
+      <rect x="420" y="-2" width="520" height="12" rx="6" fill="#141c26"/>
+      <rect x="420" y="-2" width="0" height="12" rx="6" fill="url(#s5)" filter="url(#sg)"><animate attributeName="width" values="0;416;416" keyTimes="0;0.55;1" dur="6s" repeatCount="indefinite"/></rect>
+      <g transform="translate(960 0)"><rect width="42" height="20" rx="10" fill="#38D9F0" opacity="0.15"/><text x="21" y="14" text-anchor="middle" font-size="12" font-weight="700" fill="#38D9F0">80%</text></g>
+    </g>
+
+    <g transform="translate(0 272)">
+      <text x="28" y="4" font-size="14" fill="#cbd5e1" font-weight="600">🧩 Design Systems</text>
+      <text x="28" y="20" font-size="12" fill="#6b7280">Tokens · Components · Docs · Scale</text>
+      <rect x="420" y="-2" width="520" height="12" rx="6" fill="#141c26"/>
+      <rect x="420" y="-2" width="0" height="12" rx="6" fill="url(#s6)" filter="url(#sg)"><animate attributeName="width" values="0;442;442" keyTimes="0;0.6;1" dur="6s" repeatCount="indefinite"/></rect>
+      <g transform="translate(960 0)"><rect width="42" height="20" rx="10" fill="#00df8f" opacity="0.12"/><text x="21" y="14" text-anchor="middle" font-size="12" font-weight="700" fill="#00df8f">85%</text></g>
     </g>
   </g>
 </svg>

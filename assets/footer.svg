@@ -1,41 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="150" viewBox="0 0 1000 150" role="img" aria-label="Thanks for scrolling — let's build something honest">
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="200" viewBox="0 0 1100 200" role="img" aria-label="Thanks for scrolling — let's build something honest">
   <defs>
-    <linearGradient id="w1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#38D9F0"/><stop offset="50%" stop-color="#00df8f"/><stop offset="100%" stop-color="#8C65F7"/>
-    </linearGradient>
-    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#00df8f" stop-opacity=".35"/>
-      <stop offset="100%" stop-color="#00df8f" stop-opacity="0"/>
-    </linearGradient>
-    <filter id="fg" x="-30%" y="-60%" width="160%" height="220%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <linearGradient id="fw1" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#38D9F0"/><stop offset="35%" stop-color="#00df8f"/><stop offset="75%" stop-color="#8C65F7"/><stop offset="100%" stop-color="#eb705f"/></linearGradient>
+    <linearGradient id="fadeUp" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#00df8f" stop-opacity="0.25"/><stop offset="100%" stop-color="#00df8f" stop-opacity="0"/></linearGradient>
+    <filter id="fg2" x="-30%" y="-60%" width="160%" height="220%"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="fgSoft" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
   </defs>
 
-  <rect width="1000" height="150" rx="14" fill="#0d1116"/>
+  <rect width="1100" height="200" rx="18" fill="#0d1116"/>
+  <rect x="0.8" y="0.8" width="1098.4" height="198.4" rx="18" fill="none" stroke="#1f2b36"/>
 
-  <!-- animated waves -->
-  <g>
-    <path fill="url(#fade)" d="M0,90 C150,60 300,120 500,90 C700,60 850,120 1000,90 L1000,150 L0,150 Z">
-      <animate attributeName="d" dur="9s" repeatCount="indefinite"
-        values="M0,90 C150,60 300,120 500,90 C700,60 850,120 1000,90 L1000,150 L0,150 Z;
-                M0,90 C150,120 300,60 500,90 C700,120 850,60 1000,90 L1000,150 L0,150 Z;
-                M0,90 C150,60 300,120 500,90 C700,60 850,120 1000,90 L1000,150 L0,150 Z"/>
+  <!-- waves -->
+  <g opacity="0.9">
+    <path fill="url(#fadeUp)" d="M0,110 C180,70 360,140 550,110 C740,80 920,140 1100,110 L1100,200 L0,200 Z">
+      <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0,110 C180,70 360,140 550,110 C740,80 920,140 1100,110 L1100,200 L0,200 Z; M0,110 C180,140 360,70 550,110 C740,140 920,70 1100,110 L1100,200 L0,200 Z; M0,110 C180,70 360,140 550,110 C740,80 920,140 1100,110 L1100,200 L0,200 Z"/>
     </path>
-    <path fill="none" stroke="url(#w1)" stroke-width="2" opacity=".8" filter="url(#fg)"
-      d="M0,90 C150,60 300,120 500,90 C700,60 850,120 1000,90">
-      <animate attributeName="d" dur="9s" repeatCount="indefinite"
-        values="M0,90 C150,60 300,120 500,90 C700,60 850,120 1000,90;
-                M0,90 C150,120 300,60 500,90 C700,120 850,60 1000,90;
-                M0,90 C150,60 300,120 500,90 C700,60 850,120 1000,90"/>
+    <path fill="none" stroke="url(#fw1)" stroke-width="2.2" opacity="0.85" filter="url(#fg2)" d="M0,110 C180,70 360,140 550,110 C740,80 920,140 1100,110">
+      <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0,110 C180,70 360,140 550,110 C740,80 920,140 1100,110; M0,110 C180,140 360,70 550,110 C740,140 920,70 1100,110; M0,110 C180,70 360,140 550,110 C740,80 920,140 1100,110"/>
+    </path>
+    <path fill="none" stroke="#00df8f" stroke-width="1" opacity="0.25" d="M0,125 C200,95 400,155 600,125 C800,95 950,155 1100,125">
+      <animate attributeName="d" dur="10s" repeatCount="indefinite" values="M0,125 C200,95 400,155 600,125 C800,95 950,155 1100,125; M0,125 C200,155 400,95 600,125 C800,155 950,95 1100,125; M0,125 C200,95 400,155 600,125 C800,95 950,155 1100,125"/>
     </path>
   </g>
 
-  <g text-anchor="middle" font-family="'Segoe UI',Arial,sans-serif">
-    <text x="500" y="44" font-size="24" font-weight="700" fill="url(#w1)">Thanks for scrolling.</text>
-    <text x="500" y="70" font-size="14" fill="#9ca3af">Got something worth building? The inbox is open.</text>
+  <g text-anchor="middle" font-family="'Space Grotesk','Segoe UI',Arial,sans-serif">
+    <text x="550" y="52" font-size="26" font-weight="800" fill="url(#fw1)" filter="url(#fgSoft)">Thanks for scrolling. Let's build something honest.</text>
+    <text x="550" y="78" font-family="'JetBrains Mono',monospace" font-size="13" fill="#9ca3af">1–2 projects / month · replies within 24h · Saharanpur, India (UTC+5:30)</text>
   </g>
 
-  <rect x="1" y="1" width="998" height="148" rx="14" fill="none" stroke="#1f2b36"/>
+  <g transform="translate(440 96)" font-family="'JetBrains Mono',monospace" font-size="11">
+    <rect width="96" height="24" rx="12" fill="#00df8f" opacity="0.12" stroke="#00df8f" stroke-opacity="0.3"/>
+    <text x="48" y="16" text-anchor="middle" fill="#00df8f" font-weight="700">● AVAILABLE</text>
+  </g>
+
+  <g transform="translate(550 96)" font-family="'JetBrains Mono',monospace" font-size="11">
+    <rect x="-110" y="0" width="220" height="24" rx="12" fill="#14181f" stroke="#1f2b36"/>
+    <text x="0" y="16" text-anchor="middle" fill="#6b7280">© 2026 PAVIT SINGH · PSDFOLIO</text>
+  </g>
 </svg>
